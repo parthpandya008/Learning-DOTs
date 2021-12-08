@@ -1,8 +1,14 @@
 using Unity.Entities;
+using UnityEngine;
 
-[GenerateAuthoringComponent]
-public struct RawInputData : IComponentData
+namespace ThirdPerson
 {
-    public float inputH; //Horizontal Input
-    public float inputV; //Vertical Input
+    [GenerateAuthoringComponent]
+    public struct RawInputData : IComponentData
+    {
+        [HideInInspector]
+        public float inputH; //Horizontal Input
+        [HideInInspector]
+        public float inputV; //Vertical Input
+    }
 }

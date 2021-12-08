@@ -63,6 +63,7 @@
     <Compile Include="Assets\SpaceShip\Scripts\Tags\DeathColliderTag.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\Jobs\Example.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\System\SpinnerSystem.cs" />
+    <Compile Include="Assets\ThirdPerson\Scripts\Components\RawInputData.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\Tags\ChaserTag.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\Data\MoveData.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\Data\HealthData.cs" />
@@ -81,8 +82,13 @@
     <Compile Include="Assets\SpaceShip\Scripts\Spawner.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\System\AssignPlayerAsTarget.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\Tags\SpinnerTag.cs" />
-    <Compile Include="Assets\ThirdPerson\Scripts\Components\RawInputData.cs" />
     <Compile Include="Assets\ThirdPerson\Scripts\Systems\ProcessInputData.cs" />
+    <Compile Include="Assets\ThirdPerson\Scripts\Components\MoveData.cs" />
+    <Compile Include="Assets\ThirdPerson\Scripts\Systems\MoveSystem.cs" />
+    <Compile Include="Assets\ThirdPerson\Scripts\Systems\RotateTowards.cs" />
+    <Compile Include="Assets\ThirdPerson\Scripts\Components\RotateData.cs" />
+    <Compile Include="Assets\ThirdPerson\Scripts\Components\TargetData.cs" />
+    <Compile Include="Assets\ThirdPerson\Scripts\Systems\FollowTargetSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

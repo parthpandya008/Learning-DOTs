@@ -1,18 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
+using Unity.Burst;
+using Unity.Collections;
+using Unity.Entities;
+using Unity.Jobs;
+using Unity.Mathematics;
+using Unity.Transforms;
 using UnityEngine;
 
-public class ProcessInputData : MonoBehaviour
+namespace ThirdPerson
 {
-    // Start is called before the first frame update
-    void Start()
+    public class ProcessInputData : SystemBase
     {
-        
-    }
+        protected override void OnUpdate()
+        {
+            //Temp vars coz Horizontal & Vertical are not blittable types
+            float inputH = Input.GetAxis("Horizontal");
+            float inputV = Input.GetAxis("Vertical");
+            Entities.ForEach((ref RawInputData inputData, ref MoveData moveData) =>
+            {
+                inputData.inputH = inputH;
+                inputData.inputV = inputV;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+                //Set Direction Data
+                moveData.targetDirection = new float3(inputData.inputH,0 ,inputData.inputV);
+            }).Schedule();
+        }
     }
 }
