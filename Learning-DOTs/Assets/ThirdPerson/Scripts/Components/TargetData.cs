@@ -8,8 +8,8 @@ namespace ThirdPerson
     [GenerateAuthoringComponent]
     public struct TargetData : IComponentData
     {
-        public Entity targetEntity;
-
+        public Entity followEntity;
+        public Entity lookAtEntity;
 
     }
 }

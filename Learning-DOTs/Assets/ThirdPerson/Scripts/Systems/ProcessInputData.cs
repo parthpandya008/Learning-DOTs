@@ -15,13 +15,14 @@ namespace ThirdPerson
             //Temp vars coz Horizontal & Vertical are not blittable types
             float inputH = Input.GetAxis("Horizontal");
             float inputV = Input.GetAxis("Vertical");
-            Entities.ForEach((ref RawInputData inputData, ref MoveData moveData) =>
+            Entities.ForEach((ref RawInputData inputData, ref MoveData moveData, ref RotateData rotateData) =>
             {
                 inputData.inputH = inputH;
                 inputData.inputV = inputV;
 
                 //Set Direction Data
                 moveData.targetDirection = new float3(inputData.inputH,0 ,inputData.inputV);
+                rotateData.rotateTargetPosition = moveData.targetDirection;
             }).Schedule();
         }
     }

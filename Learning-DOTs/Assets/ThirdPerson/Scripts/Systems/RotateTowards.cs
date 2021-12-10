@@ -13,11 +13,10 @@ namespace ThirdPerson
     {
         protected override void OnUpdate()
         {
-            Entities.ForEach((ref Rotation rotation,
-                in MoveData moveData, in RotateData rotateData) => {
-                    if (!moveData.targetDirection.Equals(float3.zero))
+            Entities.ForEach((ref Rotation rotation, in RotateData rotateData) => {
+                    if (!rotateData.rotateTargetPosition.Equals(float3.zero))
                     {
-                        quaternion newRotation = quaternion.LookRotationSafe(moveData.targetDirection, math.up());
+                        quaternion newRotation = quaternion.LookRotationSafe(rotateData.rotateTargetPosition, math.up());
                         rotation.Value = math.slerp(rotation.Value, newRotation, rotateData.rotateSpeed);
                     }                    
                 }).Schedule();

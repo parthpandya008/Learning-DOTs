@@ -58,13 +58,18 @@
   <ItemGroup>
     <Compile Include="Assets\SpaceShip\Scripts\System\RemoveOnDeathSystem.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\Data\TargetData.cs" />
+    <Compile Include="Assets\ThirdPerson\Scripts\Systems\RotateTowards.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\Tags\PickupTag.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\System\PlayerInputSystem.cs" />
+    <Compile Include="Assets\ThirdPerson\Scripts\Systems\MoveSystem.cs" />
+    <Compile Include="Assets\ThirdPerson\Scripts\Systems\ProcessInputData.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\Tags\DeathColliderTag.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\Jobs\Example.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\System\SpinnerSystem.cs" />
     <Compile Include="Assets\ThirdPerson\Scripts\Components\RawInputData.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\Tags\ChaserTag.cs" />
+    <Compile Include="Assets\ThirdPerson\Scripts\Systems\FollowTargetSystem.cs" />
+    <Compile Include="Assets\ThirdPerson\Scripts\Components\TargetData.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\Data\MoveData.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\Data\HealthData.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\Data\MoveSpeedData.cs" />
@@ -73,22 +78,18 @@
     <Compile Include="Assets\SpaceShip\Scripts\System\PicupOnTriggerSystem.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\System\WaveSystem.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\Data\WaveData.cs" />
+    <Compile Include="Assets\ThirdPerson\Scripts\Components\MoveData.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\System\FaceDirectionSystem.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\System\TargetToDirectionSystem.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\Tags\PlayerTag.cs" />
+    <Compile Include="Assets\ThirdPerson\Scripts\Components\RotateData.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\System\MoveForwardSystem.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\Tags\AstroidTag.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\System\PlayerMovementSystem.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\Spawner.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\System\AssignPlayerAsTarget.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\Tags\SpinnerTag.cs" />
-    <Compile Include="Assets\ThirdPerson\Scripts\Systems\ProcessInputData.cs" />
-    <Compile Include="Assets\ThirdPerson\Scripts\Components\MoveData.cs" />
-    <Compile Include="Assets\ThirdPerson\Scripts\Systems\MoveSystem.cs" />
-    <Compile Include="Assets\ThirdPerson\Scripts\Systems\RotateTowards.cs" />
-    <Compile Include="Assets\ThirdPerson\Scripts\Components\RotateData.cs" />
-    <Compile Include="Assets\ThirdPerson\Scripts\Components\TargetData.cs" />
-    <Compile Include="Assets\ThirdPerson\Scripts\Systems\FollowTargetSystem.cs" />
+    <Compile Include="Assets\ThirdPerson\Scripts\Systems\LookAtTargetSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

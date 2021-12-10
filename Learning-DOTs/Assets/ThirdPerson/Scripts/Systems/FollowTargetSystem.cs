@@ -15,10 +15,10 @@ namespace ThirdPerson
             Entities.ForEach((ref MoveData moveData, in TargetData targetData, in Translation translation) => {
 
                 ComponentDataFromEntity<Translation> allTranslations = GetComponentDataFromEntity<Translation>(true);
-                if (allTranslations.HasComponent(targetData.targetEntity))
+                if (allTranslations.HasComponent(targetData.followEntity))
                 {
-                    Translation targetPos = allTranslations[targetData.targetEntity];
-                    float3 dir = targetPos.Value - translation.Value;
+                    Translation targetPos = allTranslations[targetData.followEntity];
+                    float3 dir = targetPos.Value - translation.Value;                    
                     moveData.targetDirection = new float3(dir.x, 0, dir.z);
                 }
 
