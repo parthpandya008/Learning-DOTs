@@ -72,6 +72,7 @@
     <Compile Include="Assets\ThirdPerson\Scripts\Components\TargetData.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\Data\MoveData.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\Data\HealthData.cs" />
+    <Compile Include="Assets\ThirdPerson\Scripts\Systems\LookAtTargetSystem.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\Data\MoveSpeedData.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\System\DeathCollissionSystem.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\Data\InputData.cs" />
@@ -89,7 +90,8 @@
     <Compile Include="Assets\SpaceShip\Scripts\Spawner.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\System\AssignPlayerAsTarget.cs" />
     <Compile Include="Assets\SpaceShip\Scripts\Tags\SpinnerTag.cs" />
-    <Compile Include="Assets\ThirdPerson\Scripts\Systems\LookAtTargetSystem.cs" />
+    <Compile Include="Assets\ThirdPerson\Scripts\Utils\ConvertPlayerCam.cs" />
+    <Compile Include="Assets\ThirdPerson\Scripts\Utils\ConvertPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
